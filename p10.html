@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+  
+
+    <title>My Portfolio</title>
+
+   <style>
+   body {
+    margin: 0;
+    font-family: Arial;
+    background-color: pink;
+}
+
+
+
+
+header {
+    background-color: black;
+    color:pink;
+}
+
+
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+   
+}
+
+
+
+
+button {
+    background-color:pink;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+}
+
+
+
+
+main {
+    padding: 40px;
+    min-height: 250px;
+    background-color: pink;
+}
+
+
+
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+
+
+
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.footer-box {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-box a {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+
+.copyright {
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+
+@media (max-width: 600px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+}
+</style>
+</head>
+
+<body>
+
+   
+    <header>
+
+        <nav class="navbar">
+
+            <h1>Samriddhi</h1>
+
+            <div class="nav-links">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Skills</a>
+                <a href="#">Projects</a>
+                <a href="#">Contact</a>
+            </div>
+
+            <button>Hire Me</button>
+
+        </nav>
+
+    </header>
+
+   
+    <main>
+
+        <section>
+            <h2>Welcome to My Portfolio</h2>
+
+            <p>
+                I am a Computer Science student
+                interested in AI and Web Development.
+            </p>
+        </section>
+
+    </main>
+
+ 
+    <footer>
+
+        <div class="footer-container">
+
+            <div class="footer-box">
+                <h3>My Portfolio</h3>
+                <p>Learning and building new projects.</p>
+            </div>
+
+            <div class="footer-box">
+                <h3>Quick Links</h3>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Projects</a>
+            </div>
+
+            <div class="footer-box">
+                <h3>Contact</h3>
+                <p>Email: samriddhirathore10@gmail.com</p>
+            </div>
+
+        </div>
+
+        <p class="copyright">
+            Copyright 2026 My Portfolio
+        </p>
+
+    </footer>
+
+</body>
+
+</html>

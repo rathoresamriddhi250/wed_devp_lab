@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+    <title>Sticky Navbar and Card Overlay</title>
+    <style>
+        body {
+    margin: 0;
+    font-family: Arial;
+}
+
+
+
+
+nav {
+    background-color: black;
+    color: white;
+    padding: 15px;
+
+    position: sticky;
+    top: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+}
+
+
+
+main {
+    padding: 20px;
+}
+
+
+
+
+.card {
+    width: 300px;
+    position: relative;
+}
+
+.card img {
+    width: 100%;
+}
+
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+;
+    bottom: 5px;
+
+    width: 100%;
+    text-align: center;
+}
+
+
+
+
+.content {
+    height: 600px;
+}
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <h1>My Website</h1>
+
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>Welcome to My Website</h2>
+            <p>This is my simple webpage.</p>
+        </section>
+
+        <section class="card">
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSx2Ub0fEZhO3C3bK9ouADZy3rRkwv3ac-4hnpAIGirbA&s=10"
+                 alt="Project Image">
+
+            <div class="overlay">
+                <h2>My Project</h2>
+                <p>This is my project card.</p>
+            </div>
+
+        </section>
+
+        <section>
+            <h2>More Content</h2>
+            <p>This content helps to scroll the page.</p>
+            <p>Learning HTML and CSS is fun.</p>
+            <p>Welcome to my portfolio.</p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Copyright 2026 My Website</p>
+    </footer>
+
+</body>
+
+</html>
