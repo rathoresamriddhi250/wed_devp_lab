@@ -1,0 +1,34 @@
+P4: GITHUB README AND VERSION TAGS
+
+1. Open the README file in the terminal editor
+nano README.md
+
+2. Add this content to the file
+
+# Bosscoder Module 1 Portfolio
+
+Built by Samriddhi Rathore, Bosscoder School of Technology covers terminal, Git & GitHub basics.
+
+3. Save and close nano
+Press Ctrl + O, then Enter to save.
+Press Ctrl + X to exit.
+
+4. Stage and commit the README
+git add README.md
+git commit -m "Add project README"
+
+5. Push the commit to GitHub
+git push
+
+6. Create a version tag
+git tag v1.0
+
+7. Push the tag to GitHub
+git push origin v1.0
+
+8. Verify the tag and commit history
+git tag
+git log --oneline --decorate
+
+Expected result:
+The README is saved in the repository, and the v1.0 version tag is created and pushed to GitHub.
