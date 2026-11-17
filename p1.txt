@@ -1,0 +1,30 @@
+P1: PROJECT FOLDER AND TERMINAL NAVIGATION
+
+1. Open Terminal
+Mac: Press Cmd + Space, type Terminal, and press Enter.
+
+2. Basic navigation commands
+pwd                 Show the current folder
+ls                  List files and folders (dir on Windows CMD/PowerShell)
+cd folder           Move into a folder
+cd ..               Move one folder up
+cd ~                Go to your home folder
+mkdir folder        Create a new folder
+touch file.txt      Create an empty file
+rm file.txt         Delete a file (this cannot be undone)
+rm -r folder        Delete a folder and its contents
+clear               Clear the terminal screen
+
+3. Practical exercise
+Run these commands one by one:
+
+cd ~
+mkdir -p dev-projects/bosscoder-module1
+cd dev-projects/bosscoder-module1
+pwd
+mkdir docs src notes
+touch README.md
+ls
+
+4. Expected result
+A folder named bosscoder-module1 is created inside dev-projects. It contains docs, src, and notes folders, plus an empty README.md file.
