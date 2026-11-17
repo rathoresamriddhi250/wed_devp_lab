@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>P1 - Project Folder and Terminal Navigation</title>
+  <style>
+    body{font-family:Arial,sans-serif;line-height:1.6;margin:0;background:#f4f6f8;color:#202733}
+    header{background:#243b53;color:white;padding:32px 8%;} header p{margin:6px 0 0;color:#d9e2ec}
+    main{max-width:900px;margin:28px auto;padding:0 20px}
+    section{background:white;padding:22px 26px;margin:18px 0;border-radius:10px;box-shadow:0 2px 8px #172b4d12}
+    h2{color:#276678;margin-top:0} h3{margin-bottom:6px}
+    code,pre{font-family:Consolas,monospace} pre{background:#172b4d;color:#f0f4f8;padding:16px;border-radius:8px;overflow-x:auto}
+    .note{border-left:4px solid #d97706;padding:10px 14px;background:#fff7ed}
+    footer{text-align:center;padding:20px;color:#627d98}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>P1: Project Folder and Terminal Navigation</h1>
+    <p>Practical 1 · Working with folders and files using the terminal</p>
+  </header>
+  <main>
+    <section>
+      <h2>i) Open the Terminal</h2>
+      <p>On a Mac, press <strong>Command + Space</strong>, type <strong>Terminal</strong>, and press Enter. On Windows, open Command Prompt or PowerShell.</p>
+    </section>
+    <section>
+      <h2>ii) Basic Navigation Commands</h2>
+      <p>Use these commands to check your location, move between folders, and manage files.</p>
+      <ul>
+        <li><code>pwd</code> — show the current folder path.</li>
+        <li><code>ls</code> — list files and folders (<code>dir</code> in Windows CMD/PowerShell).</li>
+        <li><code>cd folder</code> — enter a folder.</li>
+        <li><code>cd ..</code> — move up one folder.</li>
+        <li><code>cd ~</code> — go to the home folder.</li>
+        <li><code>mkdir</code> — create a folder.</li>
+        <li><code>touch file.txt</code> — create an empty file (Mac/Linux).</li>
+        <li><code>rm file.txt</code> — delete a file.</li>
+        <li><code>rm -r folder</code> — delete a folder and its contents.</li>
+        <li><code>clear</code> — clear the terminal screen.</li>
+      </ul>
+      <p class="note"><strong>Careful:</strong> <code>rm</code> permanently removes items from the command line. Check the file or folder name before running it.</p>
+    </section>
+    <section>
+      <h2>iii) Exercise: Build the Project Structure</h2>
+      <p>Run the following commands one by one to create a project folder with three subfolders and a README file.</p>
+      <pre><code>cd ~
+mkdir -p dev-projects/bosscoder-module1
+cd dev-projects/bosscoder-module1
+pwd
+mkdir docs src notes
+touch README.md
+ls</code></pre>
+      <h3>Expected folder structure</h3>
+      <pre><code>bosscoder-module1/
+├── docs/
+├── src/
+├── notes/
+└── README.md</code></pre>
+    </section>
+    <section>
+      <h2>What I Learned</h2>
+      <p>I learned how to open the terminal, check my current directory, navigate between folders, create files and folders, and organize a basic project structure.</p>
+    </section>
+  </main>
+  <footer>Samriddhi Rathore · Bosscoder Module 1</footer>
+</body>
+</html>
