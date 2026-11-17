@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>P4 - GitHub README and Version Tags</title>
+  <style>
+    body{font-family:Arial,sans-serif;line-height:1.6;margin:0;background:#f4f6f8;color:#202733}
+    header{background:#243b53;color:white;padding:32px 8%}header p{margin:6px 0 0;color:#d9e2ec}
+    main{max-width:900px;margin:28px auto;padding:0 20px}
+    section{background:white;padding:22px 26px;margin:18px 0;border-radius:10px;box-shadow:0 2px 8px #172b4d12}
+    h2{color:#276678;margin-top:0}pre{background:#172b4d;color:#f0f4f8;padding:16px;border-radius:8px;overflow-x:auto}
+    code{font-family:Consolas,monospace}.note{background:#eff6ff;border-left:4px solid #3b82f6;padding:10px 14px}
+    footer{text-align:center;padding:20px;color:#627d98}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>P4: GitHub README and Version Tags</h1>
+    <p>Practical 4 · Documenting a project and marking a release</p>
+  </header>
+  <main>
+    <section>
+      <h2>1) Open the README File</h2>
+      <p>From the project directory, open the README file in the Nano text editor.</p>
+      <pre><code>cd ~/dev-projects/bosscoder-module1
+nano README.md</code></pre>
+      <p>Write the following project introduction:</p>
+      <pre><code># Bosscoder Module 1 Portfolio
+
+Built by Samriddhi Rathore, Bosscoder School of Technology covers terminal, Git &amp; GitHub basics.</code></pre>
+      <p>To save in Nano, press <strong>Ctrl + O</strong>, press Enter to confirm the filename, and press <strong>Ctrl + X</strong> to exit.</p>
+    </section>
+    <section>
+      <h2>2) Commit and Push the README</h2>
+      <p>Stage the README, commit the update, and push it to GitHub.</p>
+      <pre><code>git add README.md
+git commit -m "Add project README"
+git push</code></pre>
+    </section>
+    <section>
+      <h2>3) Create and Push a Version Tag</h2>
+      <p>Create a tag named <code>v1.0</code> to mark this version, then push the tag to GitHub.</p>
+      <pre><code>git tag v1.0
+git push origin v1.0</code></pre>
+    </section>
+    <section>
+      <h2>4) Verify the Tag and Commit History</h2>
+      <p>Use these commands to check the available tags and view the commit history with decorations.</p>
+      <pre><code>git tag
+git log --oneline --decorate</code></pre>
+      <p class="note"><strong>Note:</strong> Make sure your local branch is connected to the correct GitHub remote before pushing. A tag identifies a specific commit in the project history.</p>
+    </section>
+    <section>
+      <h2>What I Learned</h2>
+      <p>I learned how to write project documentation in a README file, commit and push the update, create a version tag, and verify the project history.</p>
+    </section>
+  </main>
+  <footer>Samriddhi Rathore · Bosscoder Module 1</footer>
+</body>
+</html>
