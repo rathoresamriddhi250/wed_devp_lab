@@ -1,0 +1,39 @@
+P3: FEATURE-BRANCH GIT WORKFLOW
+
+1. Go to the project folder
+cd ~/dev-projects/bosscoder-module1
+
+2. Check the current branch
+git branch
+
+3. Switch to main and update it
+git checkout main
+git pull
+
+4. Create and switch to a feature branch
+git checkout -b feature/add-about
+git branch
+
+5. Create an About file
+touch docs/about.md
+echo "About this portfolio" > docs/about.md
+
+6. Check the changes
+git status
+
+7. Stage and commit the new file
+git add docs/about.md
+git commit -m "Add about page"
+
+8. Merge the feature branch into main
+git checkout main
+git merge feature/add-about
+
+9. Push the changes to GitHub
+git push
+
+10. Delete the local feature branch after merging
+git branch -d feature/add-about
+
+Expected result:
+The about.md file is added through a feature branch and merged into main.
